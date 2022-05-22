@@ -34,6 +34,12 @@ class ArticlesController < ApplicationController
             render :edit
         end
     end
+
+    def destroy
+        article = Article.find(params[:id])
+        article.destroy!
+        redirect_to root_path, notice: 'Successfully removed'
+    end
     
     private
     def article_params
