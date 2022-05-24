@@ -16,4 +16,3 @@ class Article < ApplicationRecord
         I18n.l(self.created_at, format: :default)
     end
 end
-
