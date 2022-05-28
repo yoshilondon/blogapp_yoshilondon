@@ -6,8 +6,8 @@ class ArticlesController < ApplicationController
     end
 
     def show
-    end 
-    
+    end
+
     def new
         @article = Article.new
     end
@@ -19,10 +19,10 @@ class ArticlesController < ApplicationController
         else
             flash.now[:error] = 'Save failed'
             render :new
-        end    
+        end
     end
 
-    def edit        
+    def edit
     end
 
     def update
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
         article.destroy!
         redirect_to root_path, notice: 'Successfully removed'
     end
-    
+
     private
     def article_params
         params.require(:article).permit(:title, :content)
