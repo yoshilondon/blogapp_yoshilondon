@@ -3,8 +3,9 @@
     "description": "This is blogapp",
     "keywords": [],
     "website": "",
-    "repository": "https://github.com/yoshilondon/blogapp_yoshilondon",
+    "repository": "https://github.com/yoshilondon/blogapp_yoshilondon.git",
     "env": {},
+    "stack": "heroku-18",
     "addons": [
       "heroku-postgresql:hobby-dev"
     ],
